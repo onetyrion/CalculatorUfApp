@@ -58,7 +58,8 @@ const Section: React.FC<
     </View>
   )
 }
-
+  const lern = "asdasd"
+  
 const App = () => {
   const isDarkMode = useColorScheme() === 'dark'
 
