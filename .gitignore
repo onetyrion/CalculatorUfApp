@@ -39,7 +39,6 @@ package-lock.json
 yarn.lock
 npm-debug.log
 yarn-error.log
-*/*.lock
 
 # BUCK
 buck-out/
@@ -64,4 +63,5 @@ buck-out/
 
 # Ruby / CocoaPods
 /ios/Pods/
+/ios/Podfile.lock
 /vendor/bundle/
