@@ -11,4 +11,4 @@ export default {
     500: '#828A92',
     600: '#EAEBEE',
   },
-}
+};

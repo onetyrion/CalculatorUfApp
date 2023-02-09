@@ -1,7 +1,7 @@
-import { FC } from 'react'
-import LinearGradient, { LinearGradientProps } from 'react-native-linear-gradient'
-import COLORS from '../../utils/COLORS'
-import styles from './styles'
+import { FC } from 'react';
+import LinearGradient, { LinearGradientProps } from 'react-native-linear-gradient';
+import COLORS from '../../utils/COLORS';
+import styles from './styles';
 
 const LinearGradientCustom: FC<Partial<LinearGradientProps>> = ({ children, ...props }) => {
   return (
@@ -14,7 +14,7 @@ const LinearGradientCustom: FC<Partial<LinearGradientProps>> = ({ children, ...p
     >
       {children}
     </LinearGradient>
-  )
-}
+  );
+};
 
-export default LinearGradientCustom
+export default LinearGradientCustom;

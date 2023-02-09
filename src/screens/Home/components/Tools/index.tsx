@@ -1,8 +1,8 @@
-import React from 'react'
-import { Text, TouchableOpacity, View } from 'react-native'
-import styles from '../styles'
-import Clock from '../../../../assets/icons/clock.svg'
-import Delete from '../../../../assets/icons/delete.svg'
+import React from 'react';
+import { Text, TouchableOpacity, View } from 'react-native';
+import styles from '../styles';
+import Clock from '../../../../assets/icons/clock.svg';
+import Delete from '../../../../assets/icons/delete.svg';
 
 const Tools = () => {
   return (
@@ -17,7 +17,7 @@ const Tools = () => {
         <Delete height={32} width={32} />
       </TouchableOpacity>
     </View>
-  )
-}
+  );
+};
 
-export default Tools
+export default Tools;

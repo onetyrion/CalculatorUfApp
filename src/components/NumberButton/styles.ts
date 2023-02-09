@@ -1,5 +1,5 @@
-import { StyleSheet } from 'react-native'
-import COLORS from '../../utils/COLORS'
+import { StyleSheet } from 'react-native';
+import COLORS from '../../utils/COLORS';
 
 const styles = StyleSheet.create({
   number: {
@@ -17,6 +17,6 @@ const styles = StyleSheet.create({
     fontSize: 26,
     fontWeight: 'bold',
   },
-})
+});
 
-export default styles
+export default styles;

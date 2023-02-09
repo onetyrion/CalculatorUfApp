@@ -1,8 +1,8 @@
-import React, { FC } from 'react'
-import { Text, TouchableOpacity } from 'react-native'
-import LinearGradientCustom from '../LinearGradient'
-import { INumberButton } from './INumberButton'
-import styles from './styles'
+import React, { FC } from 'react';
+import { Text, TouchableOpacity } from 'react-native';
+import LinearGradientCustom from '../LinearGradient';
+import { INumberButton } from './INumberButton';
+import styles from './styles';
 
 const NumberButton: FC<INumberButton> = ({ title, special, onPress }) => {
   return (
@@ -15,7 +15,7 @@ const NumberButton: FC<INumberButton> = ({ title, special, onPress }) => {
         <Text style={styles.textPrimary}>{title}</Text>
       )}
     </TouchableOpacity>
-  )
-}
+  );
+};
 
-export default NumberButton
+export default NumberButton;

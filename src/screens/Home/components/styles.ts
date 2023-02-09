@@ -1,5 +1,5 @@
-import { StyleSheet } from 'react-native'
-import COLORS from '../../../utils/COLORS'
+import { StyleSheet } from 'react-native';
+import COLORS from '../../../utils/COLORS';
 
 const styles = StyleSheet.create({
   Header: {
@@ -51,7 +51,7 @@ const styles = StyleSheet.create({
     marginTop: 40,
     marginHorizontal: 30,
   },
-})
+});
 
 export const buildContainer = (value: number) =>
   StyleSheet.create({
@@ -59,6 +59,6 @@ export const buildContainer = (value: number) =>
       paddingTop: value,
       backgroundColor: COLORS.grey[100],
     },
-  })
+  });
 
-export default styles
+export default styles;

@@ -48,6 +48,6 @@ const buttons = [
     value: '=',
     special: true,
   },
-]
+];
 
-export default buttons
+export default buttons;
