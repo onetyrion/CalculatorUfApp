@@ -10,7 +10,7 @@ const NumberButton: FC<INumberButton> = ({ title, special, onPress }) => {
       {special ? (
         <LinearGradientCustom style={styles.number}>
           <Text style={styles.textPrimary}>{title}</Text>
-        </LinearGradientCustom>
+         </LinearGradientCustom>
       ) : (
         <Text style={styles.textPrimary}>{title}</Text>
       )}

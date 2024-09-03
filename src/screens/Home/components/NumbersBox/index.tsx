@@ -1,12 +1,14 @@
-import { Alert, View } from 'react-native';
+import React, { FC } from 'react';
+import { View } from 'react-native';
 import NumberButton from '../../../../components/NumberButton';
 import buttons from '../../../../utils/BUTTONS';
 import styles from '../styles';
 
-const onPress = (event: string | number) => () => {
-  Alert.alert(`${event}`);
+type Props = {
+  onPress: (value: any) => void;
 };
-const NumbersBox = () => {
+
+const NumbersBox: FC<Props> = ({onPress}) => {
   return (
     <View style={styles.boxNumbers}>
       {buttons.map(({ text, value, special }) => (

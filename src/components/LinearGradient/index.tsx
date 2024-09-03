@@ -1,4 +1,4 @@
-import { FC } from 'react';
+import React, { FC } from 'react';
 import LinearGradient, { LinearGradientProps } from 'react-native-linear-gradient';
 import COLORS from '../../utils/COLORS';
 import styles from './styles';
