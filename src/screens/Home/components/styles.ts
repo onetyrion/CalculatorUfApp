@@ -45,11 +45,13 @@ const styles = StyleSheet.create({
     paddingHorizontal: 32,
   },
   boxNumbers: {
+    // backgroundColor: "red",
     flexDirection: 'row',
-    flexWrap: 'wrap',
-    maxWidth: '100%',
-    marginTop: 40,
-    marginHorizontal: 30,
+    // flexWrap: 'wrap',
+    // width: '100%',
+    // marginTop: 40,
+    // maxWidth: '100%',
+    // marginHorizontal: 30,
   },
 });
 

@@ -9,8 +9,6 @@ const styles = StyleSheet.create({
     margin: 8,
     marginVertical: 12,
     borderRadius: 9,
-    width: 82,
-    height: 82,
   },
   textPrimary: {
     color: COLORS.grey[600],

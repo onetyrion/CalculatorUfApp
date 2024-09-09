@@ -1,15 +1,20 @@
-const buttons = [
+export type Button = {
+  text: string;
+  value: number;
+  special?: boolean;
+};
+const buttons: Button[] = [
   {
-    text: '7',
-    value: 7,
+    text: '1',
+    value: 1,
   },
   {
-    text: '8',
-    value: 8,
+    text: '2',
+    value: 2,
   },
   {
-    text: '9',
-    value: 9,
+    text: '3',
+    value: 3,
   },
   {
     text: '4',
@@ -24,16 +29,16 @@ const buttons = [
     value: 6,
   },
   {
-    text: '1',
-    value: 1,
+    text: '7',
+    value: 7,
   },
   {
-    text: '2',
-    value: 2,
+    text: '8',
+    value: 8,
   },
   {
-    text: '3',
-    value: 3,
+    text: '9',
+    value: 9,
   },
   {
     text: '0',
@@ -41,11 +46,11 @@ const buttons = [
   },
   {
     text: '00',
-    value: '00',
+    value: 0,
   },
   {
     text: '=',
-    value: '=',
+    value: -1,
     special: true,
   },
 ];

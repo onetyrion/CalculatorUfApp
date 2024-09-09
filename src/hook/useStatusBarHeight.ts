@@ -15,7 +15,7 @@ export default function useStatusBarHeight() {
       setValue(height);
     });
     const listener = emitter.addListener('statusBarFrameWillChange', (data) =>
-      setValue(data.frame.height),
+      setValue(data.frame.height)
     );
 
     return () => listener.remove();

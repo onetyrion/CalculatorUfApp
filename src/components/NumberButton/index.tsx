@@ -4,13 +4,13 @@ import LinearGradientCustom from '../LinearGradient';
 import { INumberButton } from './INumberButton';
 import styles from './styles';
 
-const NumberButton: FC<INumberButton> = ({ title, special, onPress }) => {
+const NumberButton: FC<INumberButton> = ({ title, special, onPress, propsStyle }) => {
   return (
-    <TouchableOpacity style={styles.number} key={title} onPress={onPress}>
+    <TouchableOpacity style={[styles.number, propsStyle]} key={title} onPress={onPress}>
       {special ? (
         <LinearGradientCustom style={styles.number}>
           <Text style={styles.textPrimary}>{title}</Text>
-         </LinearGradientCustom>
+        </LinearGradientCustom>
       ) : (
         <Text style={styles.textPrimary}>{title}</Text>
       )}
