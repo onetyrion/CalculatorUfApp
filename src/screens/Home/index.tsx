@@ -1,5 +1,5 @@
 import React from 'react';
-import { ScrollView, StatusBar, Text } from 'react-native';
+import { SafeAreaView, StatusBar, Text } from 'react-native';
 import styles, { buildContainer } from './components/styles';
 import Header from './components/Header';
 import Content from './components/Content';
@@ -23,27 +23,27 @@ export const Home = () => {
   const { onPressClock, pressCloak } = usePressClock();
 
   return (
-    <ScrollView style={styleContainer} bounces={false}>
-      <StatusBar barStyle={'light-content'} />
-      <ReloadButton onPress={tryAgainFetch} />
-      <Header>
-        <Text style={styles.SecondaryText}>{formatMoney(CLPValue)} CLP</Text>
-        <Text numberOfLines={1} adjustsFontSizeToFit style={styles.PrimaryText}>
-          {UFValue} UF
-        </Text>
-      </Header>
-      <LinearGradient />
-      <Content>
-        <Tools
-          onDelete={onDelete}
-          onDeleteAll={onDeleteAll}
-          todayUF={pressCloak ? todayUF.Fecha : `UF $${todayUF.Valor}`}
-          reload={tryAgainFetch}
-          onClock={onPressClock}
-          isLoading={isLoading}
-        />
-        <NumbersBox onPress={onPress} />
-      </Content>
-    </ScrollView>
+      <SafeAreaView style={styleContainer}>
+        <StatusBar barStyle={'light-content'} />
+        <ReloadButton onPress={tryAgainFetch} />
+        <Header>
+          <Text style={styles.SecondaryText}>{formatMoney(CLPValue)} CLP</Text>
+          <Text numberOfLines={1} adjustsFontSizeToFit style={styles.PrimaryText}>
+            {UFValue} UF
+          </Text>
+        </Header>
+        <LinearGradient />
+        <Content>
+          <Tools
+            onDelete={onDelete}
+            onDeleteAll={onDeleteAll}
+            todayUF={pressCloak ? todayUF.Fecha : `UF $${todayUF.Valor}`}
+            reload={tryAgainFetch}
+            onClock={onPressClock}
+            isLoading={isLoading}
+          />
+          <NumbersBox onPress={onPress} />
+        </Content>
+      </SafeAreaView>
   );
 };

@@ -16,6 +16,7 @@ const useGetLatestUF = () => {
   });
 
   useEffect(() => {
+    console.log('dataSaved');
     if (
       dataFetched.fetchStatus === 'idle' &&
       dataSaved.status === 'success' &&

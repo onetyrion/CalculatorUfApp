@@ -12,8 +12,9 @@ const styles = StyleSheet.create({
   Content: {
     paddingTop: 22,
     paddingHorizontal: 18,
-    minHeight: '100%',
     backgroundColor: COLORS.grey[200],
+    overflow: 'hidden',
+    flex: 1,
   },
   PrimaryText: {
     color: COLORS.grey[600],
@@ -45,21 +46,16 @@ const styles = StyleSheet.create({
     paddingHorizontal: 32,
   },
   boxNumbers: {
-    // backgroundColor: "red",
     flexDirection: 'row',
-    // flexWrap: 'wrap',
-    // width: '100%',
-    // marginTop: 40,
-    // maxWidth: '100%',
-    // marginHorizontal: 30,
   },
 });
 
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
 export const buildContainer = (value: number) =>
   StyleSheet.create({
     ScrollView: {
-      paddingTop: value,
       backgroundColor: COLORS.grey[100],
+      height: '100%',
     },
   });
 
